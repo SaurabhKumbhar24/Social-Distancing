@@ -1,5 +1,5 @@
-# Social-Distancing
-Object Detection , Human Detection using Tensorflow Object Detection API
+# Object Detection-Human Detection-Social Distancing using Tensorflow Object Detection
+# Specific Object Detection using Tensorflow Object Detection API
 
 STEPS : 
 1. Object Detection using TensorFlow Object Detection API
@@ -11,6 +11,9 @@ STEPS :
 7. Change color of human objects which are breaking rules of social distancing.
 8. Visualize The Output Image
 9. Convert Images to Video
+
+*To Detect Specific Object You Required print category-index and get the key of your object
+Replace 1 which represent Person with the key of your object in *
 
 Input Dataset : https://www.robots.ox.ac.uk/ActiveVision/Research/Projects/2009bbenfold_headpose/Datasets/TownCentreXVID.avi
 

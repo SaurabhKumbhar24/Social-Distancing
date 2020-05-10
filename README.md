@@ -27,15 +27,15 @@ Functions
 11. FramesToStore
 12. SocialDistanceToVideo
 
-Functions Explaination:
+**Functions Explaination**:
 
-1. load_model 
+1. **load_model** <br> 
 
     Args  : 
           model_name : Passing Tensorflow model Name
     Returns : Trained model
 
-2. run_inference_for_single_image
+2. **run_inference_for_single_image** <br>
 
     Args : 
           model : Passing loaded Model
@@ -50,7 +50,7 @@ Functions Explaination:
                  list of scores for each detection
               4. Number of Detected Objects
 
-3.  VideoToFrames
+3.  **VideoToFrames** <br>
 
     Args : 
           VideoFileName : Pass name of video file with ext 
@@ -67,14 +67,14 @@ Functions Explaination:
     Returns:
             Image with object detected boxes drawn on it
 
-5. DisplayImage
+5. **DisplayImage**<br>
 
     Args:
           Image : numpy array Image
     Output:
             Prints image to output
 
-6. FramesToVideo
+6. **FramesToVideo**<br>
 
     Args :
           no_of_frames : Number of frames to be converted to
@@ -82,7 +82,7 @@ Functions Explaination:
     Output :
             The Video with 15 fps created using 0-n frames
 
-7. getSingleHumanCoordinates
+7. **getSingleHumanCoordinates**<br>
     Args :
           Boxes : List of Detected boxes coordinates
           Image : Image 
@@ -91,38 +91,37 @@ Functions Explaination:
     Returns : 
             Left right bottom top coordinates of object
 
-8. getDistance
+8. **getDistance**<br>
     Args :
           x1,x2,y1,y2 : Coordinates to find Distance
     Returns :
           Distance between (x1,y1) and (x2,y2)
 
-9. VisualizeSocialDistancing
+9. **VisualizeSocialDistancing**<br>
     Args :
           Boxes : List of Coordinates of all objects
           Image : Image To Visualize
     Output :
           Draws red color on boxes near to each other
 
-10. VisualizeHumanImage
+10. **VisualizeHumanImage**<br>
     Args :
           ImageName : Name of Image File to Visualize
           Path : path to Image
     Returns :
           Image with Boxes drawen
 
-11. FramesToStore
+11. **FramesToStore**<br>
     Args : 
           tillFrame : Pass number of Frames to Visualize
     Output :
             Stores Visualized Image To SocialDistancingFrames
             Folder
 
-12. SocialDistanceToVideo
+12. **SocialDistanceToVideo**<br>
     Args :
           no_of_frames : Pass number of Frames
     Outputs :
             Video till no_of_frames of 15fps
-            
-            
-  Dataset : https://www.robots.ox.ac.uk/ActiveVision/Research/Projects/2009bbenfold_headpose/Datasets/TownCentreXVID.avi
+
+Dataset : https://www.robots.ox.ac.uk/ActiveVision/Research/Projects/2009bbenfold_headpose/Datasets/TownCentreXVID.avi

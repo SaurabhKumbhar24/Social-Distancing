@@ -43,111 +43,111 @@ Functions
 
 1. **load_model** <br> 
 
-    Args  :<br>
-            model_name : Passing Tensorflow model Name<br>
-    Returns : <br>
-            Trained model<br>
+    *Args*  :<br>
+    &nbsp;&nbsp;&nbsp;model_name : Passing Tensorflow model Name<br>
+    *Returns* : <br>
+            &nbsp;&nbsp;&nbsp;Trained model<br>
 
 2. **run_inference_for_single_image** <br>
 
-    Args :<br>
-          model : Passing loaded Model<br>
-          image : Image to be processed<br>
+    *Args* :<br>
+          &nbsp;&nbsp;&nbsp;model : Passing loaded Model<br>
+          &nbsp;&nbsp;&nbsp;image : Image to be processed<br>
     
-    Returns : <br>
-              Output Dictionary which contains<br>
-              1. Detected Boxes Dimensions<br>
-              2. Detected Classes index <br>
-                 eg [1,2,3] 1 is for Person<br>
-              3. Detected Scores which is <br>
-                 list of scores for each detection<br>
-              4. Number of Detected Objects<br>
+    *Returns* : <br>
+              &nbsp;&nbsp;&nbsp;Output Dictionary which contains<br>
+              &nbsp;&nbsp;&nbsp;1. Detected Boxes Dimensions<br>
+              &nbsp;&nbsp;&nbsp;2. Detected Classes index <br>
+                 &nbsp;&nbsp;&nbsp;eg [1,2,3] 1 is for Person<br>
+              &nbsp;&nbsp;&nbsp;3. Detected Scores which is <br>
+                 &nbsp;&nbsp;&nbsp;list of scores for each detection<br>
+              &nbsp;&nbsp;&nbsp;4. Number of Detected Objects<br>
 
 3.  **VideoToFrames** <br>
 
-    Args : <br>
-          VideoFileName : Pass name of video file with ext <br>
-          Path : Pass Path where to store Frames<br>
+    *Args* : <br>
+          &nbsp;&nbsp;&nbsp;VideoFileName : Pass name of video file with ext <br>
+          &nbsp;&nbsp;&nbsp;Path : Pass Path where to store Frames<br>
     
-    Returns:<br>
-            Creates Frames From video and store it in path<br>
+    *Returns* :<br>
+            &nbsp;&nbsp;&nbsp;Creates Frames From video and store it in path<br>
 
 4.  **VisualizeImage**<br>
     
-    Args: <br>
-          ImageName : Pass name of Image to be Visualized<br>
-          Path : path to the image<br>
+    *Args* : <br>
+          &nbsp;&nbsp;&nbsp;ImageName : Pass name of Image to be Visualized<br>
+          &nbsp;&nbsp;&nbsp;Path : path to the image<br>
           
-    Returns:<br>
-            Image with object detected boxes drawn on it<br>
+    *Returns* :<br>
+            &nbsp;&nbsp;&nbsp;Image with object detected boxes drawn on it<br>
 
 5. **DisplayImage**<br>
 
-    Args:<br>
-          Image : numpy array Image<br>
+    *Args* :<br>
+          &nbsp;&nbsp;&nbsp;Image : numpy array Image<br>
           
-    Output:<br>
-            Prints image to output<br>
+    *Outputs* :<br>
+            &nbsp;&nbsp;&nbsp;Prints image to output<br>
 
 6. **FramesToVideo**<br>
 
-    Args :<br>
-          no_of_frames : Number of frames to be converted to<br>
-                         Video<br>
+    *Args* :<br>
+          &nbsp;&nbsp;&nbsp;no_of_frames : Number of frames to be converted to<br>
+                &nbsp;&nbsp;&nbsp;Video<br>
                          
-    Output :<br>
-            The Video with 15 fps created using 0-n frames<br>
+    *Outputs* :<br>
+            &nbsp;&nbsp;&nbsp;The Video with 15 fps created using 0-n frames<br>
 
 7. **getSingleHumanCoordinates**<br>
 
-    Args :<br>
-          Boxes : List of Detected boxes coordinates<br>
-          Image : Image <br>
-          position: position of object from list of <br>
+    *Args* :<br>
+          &nbsp;&nbsp;&nbsp;Boxes : List of Detected boxes coordinates<br>
+          &nbsp;&nbsp;&nbsp;Image : Image <br>
+          &nbsp;&nbsp;&nbsp;position: position of object from list of <br>
                     coordinates<br>
                     
-    Returns : <br>
-            Left right bottom top coordinates of object<br>
+    *Returns* : <br>
+            &nbsp;&nbsp;&nbsp;Left right bottom top coordinates of object<br>
 
 8. **getDistance**<br>
 
-    Args :<br>
-          x1,x2,y1,y2 : Coordinates to find Distance<br>
+    *Args* :<br>
+          &nbsp;&nbsp;&nbsp;x1,x2,y1,y2 : Coordinates to find Distance<br>
           
-    Returns :<br>
-          Distance between (x1,y1) and (x2,y2)<br>
+    *Returns* :<br>
+          &nbsp;&nbsp;&nbsp;Distance between (x1,y1) and (x2,y2)<br>
 
 9. **VisualizeSocialDistancing**<br>
 
-    Args :<br>
-          Boxes : List of Coordinates of all objects<br>
-          Image : Image To Visualize<br>
+    *Args* :<br>
+          &nbsp;&nbsp;&nbsp;Boxes : List of Coordinates of all objects<br>
+          &nbsp;&nbsp;&nbsp;Image : Image To Visualize<br>
           
-    Output :<br>
-          Draws red color on boxes near to each other<br>
+    *Outputs* :<br>
+          &nbsp;&nbsp;&nbsp;Draws red color on boxes near to each other<br>
 
 10. **VisualizeHumanImage**<br>
 
-    Args :<br>
-          ImageName : Name of Image File to Visualize<br>
-          Path : path to Image<br>
+    *Args* :<br>
+          &nbsp;&nbsp;&nbsp;ImageName : Name of Image File to Visualize<br>
+          &nbsp;&nbsp;&nbsp;Path : path to Image<br>
           
-    Returns :<br>
-          Image with Boxes drawen<br>
+    *Returns* :<br>
+          &nbsp;&nbsp;&nbsp;Image with Boxes drawen<br>
 
 11. **FramesToStore**<br>
 
-    Args : <br>
-          tillFrame : Pass number of Frames to Visualize<br>
+    *Args* : <br>
+          &nbsp;&nbsp;&nbsp;tillFrame : Pass number of Frames to Visualize<br>
           
-    Output :<br>
-            Stores Visualized Image To SocialDistancingFrames<br>
-            Folder<br>
+    *Outputs* :<br>
+            &nbsp;&nbsp;&nbsp;Stores Visualized Image To SocialDistancingFrames<br>
+            &nbsp;&nbsp;&nbsp;Folder<br>
 
 12. **SocialDistanceToVideo**<br>
 
-    Args :<br>
-          no_of_frames : Pass number of Frames<br>
+    *Args* :<br>
+          &nbsp;&nbsp;&nbsp;no_of_frames : Pass number of Frames<br>
           
-    Outputs :<br>
-            Video till no_of_frames of 15fps<br>
+    *Outputs* :<br>
+            &nbsp;&nbsp;&nbsp;Video till no_of_frames of 15fps<br>

@@ -43,110 +43,111 @@ Functions
 
 1. **load_model** <br> 
 
-    Args  : 
-          model_name : Passing Tensorflow model Name
-    Returns : Trained model
+    Args  :<br>
+            model_name : Passing Tensorflow model Name<br>
+    Returns : <br>
+            Trained model<br>
 
 2. **run_inference_for_single_image** <br>
 
-    Args : 
-          model : Passing loaded Model
-          image : Image to be processed
+    Args :<br>
+          model : Passing loaded Model<br>
+          image : Image to be processed<br>
     
-    Returns : 
-              Output Dictionary which contains
-              1. Detected Boxes Dimensions
-              2. Detected Classes index 
-                 eg [1,2,3] 1 is for Person
-              3. Detected Scores which is 
-                 list of scores for each detection
-              4. Number of Detected Objects
+    Returns : <br>
+              Output Dictionary which contains<br>
+              1. Detected Boxes Dimensions<br>
+              2. Detected Classes index <br>
+                 eg [1,2,3] 1 is for Person<br>
+              3. Detected Scores which is <br>
+                 list of scores for each detection<br>
+              4. Number of Detected Objects<br>
 
 3.  **VideoToFrames** <br>
 
-    Args : 
-          VideoFileName : Pass name of video file with ext 
-          Path : Pass Path where to store Frames
+    Args : <br>
+          VideoFileName : Pass name of video file with ext <br>
+          Path : Pass Path where to store Frames<br>
     
-    Returns:
-            Creates Frames From video and store it in path
+    Returns:<br>
+            Creates Frames From video and store it in path<br>
 
 4.  **VisualizeImage**<br>
     
-    Args: 
-          ImageName : Pass name of Image to be Visualized
-          Path : path to the image
+    Args: <br>
+          ImageName : Pass name of Image to be Visualized<br>
+          Path : path to the image<br>
           
-    Returns:
-            Image with object detected boxes drawn on it
+    Returns:<br>
+            Image with object detected boxes drawn on it<br>
 
 5. **DisplayImage**<br>
 
-    Args:
-          Image : numpy array Image
+    Args:<br>
+          Image : numpy array Image<br>
           
-    Output:
-            Prints image to output
+    Output:<br>
+            Prints image to output<br>
 
 6. **FramesToVideo**<br>
 
-    Args :
-          no_of_frames : Number of frames to be converted to
-                         Video
+    Args :<br>
+          no_of_frames : Number of frames to be converted to<br>
+                         Video<br>
                          
-    Output :
-            The Video with 15 fps created using 0-n frames
+    Output :<br>
+            The Video with 15 fps created using 0-n frames<br>
 
 7. **getSingleHumanCoordinates**<br>
 
-    Args :
-          Boxes : List of Detected boxes coordinates
-          Image : Image 
-          position: position of object from list of 
-                    coordinates
+    Args :<br>
+          Boxes : List of Detected boxes coordinates<br>
+          Image : Image <br>
+          position: position of object from list of <br>
+                    coordinates<br>
                     
-    Returns : 
-            Left right bottom top coordinates of object
+    Returns : <br>
+            Left right bottom top coordinates of object<br>
 
 8. **getDistance**<br>
 
-    Args :
-          x1,x2,y1,y2 : Coordinates to find Distance
+    Args :<br>
+          x1,x2,y1,y2 : Coordinates to find Distance<br>
           
-    Returns :
-          Distance between (x1,y1) and (x2,y2)
+    Returns :<br>
+          Distance between (x1,y1) and (x2,y2)<br>
 
 9. **VisualizeSocialDistancing**<br>
 
-    Args :
-          Boxes : List of Coordinates of all objects
-          Image : Image To Visualize
+    Args :<br>
+          Boxes : List of Coordinates of all objects<br>
+          Image : Image To Visualize<br>
           
-    Output :
-          Draws red color on boxes near to each other
+    Output :<br>
+          Draws red color on boxes near to each other<br>
 
 10. **VisualizeHumanImage**<br>
 
-    Args :
-          ImageName : Name of Image File to Visualize
-          Path : path to Image
+    Args :<br>
+          ImageName : Name of Image File to Visualize<br>
+          Path : path to Image<br>
           
-    Returns :
-          Image with Boxes drawen
+    Returns :<br>
+          Image with Boxes drawen<br>
 
 11. **FramesToStore**<br>
 
-    Args : 
-          tillFrame : Pass number of Frames to Visualize
+    Args : <br>
+          tillFrame : Pass number of Frames to Visualize<br>
           
-    Output :
-            Stores Visualized Image To SocialDistancingFrames
-            Folder
+    Output :<br>
+            Stores Visualized Image To SocialDistancingFrames<br>
+            Folder<br>
 
 12. **SocialDistanceToVideo**<br>
 
-    Args :
-          no_of_frames : Pass number of Frames
+    Args :<br>
+          no_of_frames : Pass number of Frames<br>
           
-    Outputs :
-            Video till no_of_frames of 15fps
+    Outputs :<br>
+            Video till no_of_frames of 15fps<br>

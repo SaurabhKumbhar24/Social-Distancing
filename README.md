@@ -12,8 +12,14 @@ STEPS :
 8. Visualize The Output Image
 9. Convert Images to Video
 
-*To Detect Specific Object You Required print category-index and get the key of your object
-Replace 1 which represent Person with the key of your object in *
+*To Detect Specific Object You Required print category-index and get the key of your object*
+*Replace 1 which represent Person with the key of your object in VisualizeHumansImage *
+*if(output_dict['detection_classes'][index] != 1):*
+        *indexes_not_human.append(index)*
+*Change this 1*
+*PATH_TO_LABELS = 'models/research/object_detection/data/mscoco_label_map.pbtxt'*
+*category_index = label_map_util.create_category_index_from_labelmap(PATH_TO_LABELS, use_display_name=True)*
+*print this category index to get the key of objects you can detect*
 
 Input Dataset : https://www.robots.ox.ac.uk/ActiveVision/Research/Projects/2009bbenfold_headpose/Datasets/TownCentreXVID.avi
 

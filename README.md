@@ -16,8 +16,13 @@ Input Dataset : https://www.robots.ox.ac.uk/ActiveVision/Research/Projects/2009b
 
 Outputs :
 
-<img src="">
+<h3>Object Detection</h3>
 
+<img src="objectDetection.png" alt="Object Detection Image">
+
+<h3>Social Distancing</h3>
+
+<img src="SocialDistancing.png" alt="Social Distancing Image">
 
 Functions
 

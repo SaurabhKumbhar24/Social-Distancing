@@ -12,6 +12,13 @@ STEPS :
 8. Visualize The Output Image
 9. Convert Images to Video
 
+Input Dataset : https://www.robots.ox.ac.uk/ActiveVision/Research/Projects/2009bbenfold_headpose/Datasets/TownCentreXVID.avi
+
+Outputs :
+
+<img src="">
+
+
 Functions
 
 1. load_model
@@ -64,6 +71,7 @@ Functions
     Args: 
           ImageName : Pass name of Image to be Visualized
           Path : path to the image
+          
     Returns:
             Image with object detected boxes drawn on it
 
@@ -71,6 +79,7 @@ Functions
 
     Args:
           Image : numpy array Image
+          
     Output:
             Prints image to output
 
@@ -79,49 +88,60 @@ Functions
     Args :
           no_of_frames : Number of frames to be converted to
                          Video
+                         
     Output :
             The Video with 15 fps created using 0-n frames
 
 7. **getSingleHumanCoordinates**<br>
+
     Args :
           Boxes : List of Detected boxes coordinates
           Image : Image 
           position: position of object from list of 
                     coordinates
+                    
     Returns : 
             Left right bottom top coordinates of object
 
 8. **getDistance**<br>
+
     Args :
           x1,x2,y1,y2 : Coordinates to find Distance
+          
     Returns :
           Distance between (x1,y1) and (x2,y2)
 
 9. **VisualizeSocialDistancing**<br>
+
     Args :
           Boxes : List of Coordinates of all objects
           Image : Image To Visualize
+          
     Output :
           Draws red color on boxes near to each other
 
 10. **VisualizeHumanImage**<br>
+
     Args :
           ImageName : Name of Image File to Visualize
           Path : path to Image
+          
     Returns :
           Image with Boxes drawen
 
 11. **FramesToStore**<br>
+
     Args : 
           tillFrame : Pass number of Frames to Visualize
+          
     Output :
             Stores Visualized Image To SocialDistancingFrames
             Folder
 
 12. **SocialDistanceToVideo**<br>
+
     Args :
           no_of_frames : Pass number of Frames
+          
     Outputs :
             Video till no_of_frames of 15fps
-
-Dataset : https://www.robots.ox.ac.uk/ActiveVision/Research/Projects/2009bbenfold_headpose/Datasets/TownCentreXVID.avi
